@@ -1,0 +1,39 @@
+:root {
+  --main-green-color: #008139;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+h1 {
+  font-family: var(--header-title-h1);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 12px;
+  @media screen and (min-width: 768px) {
+    padding: 0 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0 36px;
+  }
+}
