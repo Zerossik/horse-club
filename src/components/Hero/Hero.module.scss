@@ -1,0 +1,93 @@
+@use '../../mіxin/mіxins' as m;
+
+.hero {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  @media screen and (orientation: portrait) and (max-width: 767px) {
+    padding-bottom: 60%;
+  }
+  @media screen and (orientation: landscape) {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.heroContentWrap {
+  max-width: 1280;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  @media screen and (orientation: landscape) {
+  }
+}
+.heroTitle {
+  margin-bottom: 31px;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  & span {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 64px;
+  }
+}
+.heroDescription {
+  margin-bottom: 24px;
+  line-height: 140%;
+  font-size: 13px;
+  color: #646464;
+  & span {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 24px;
+  }
+}
+.heroButton {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(#fff383, #ffc700);
+  box-shadow: 0 4px 0 #6a5300;
+
+  font-size: 16px;
+  font-weight: 700;
+  transition: transform 200ms linear;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (orientation: landscape) {
+}

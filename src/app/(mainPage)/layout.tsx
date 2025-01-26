@@ -1,4 +1,3 @@
-import Header from '@/src/components/Header/Header';
 import { Metadata } from 'next';
 import { FC, ReactNode } from 'react';
 
@@ -12,11 +11,6 @@ export const metadata: Metadata = {
 };
 
 const MainPageLayout: FC<Props> = ({ children }) => {
-  return (
-    <>
-      <Header />
-      <main>{children}</main>
-    </>
-  );
+  return <>{children}</>;
 };
 export default MainPageLayout;
