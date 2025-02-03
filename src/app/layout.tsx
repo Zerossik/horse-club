@@ -6,7 +6,7 @@ const roboto = Roboto({
   weight: ['400', '500', '700'],
 });
 const philosopher = Philosopher({
-  variable: '--header-title-h1',
+  variable: '--font-philosopher',
   subsets: ['latin', 'cyrillic'],
   weight: ['400', '700'],
 });

@@ -1,5 +1,6 @@
 :root {
   --main-green-color: #008139;
+  --text-color: #7e7e7e;
 }
 * {
   box-sizing: border-box;
@@ -15,7 +16,7 @@ button {
   cursor: pointer;
 }
 h1 {
-  font-family: var(--header-title-h1);
+  font-family: var(--font-philosopher);
 }
 img {
   width: 100%;
