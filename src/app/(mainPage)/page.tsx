@@ -3,6 +3,7 @@ import Header from '@/src/components/Header/Header';
 import Hero from '@/src/components/Hero/Hero';
 import style from './Main.module.scss';
 import About from '@components/About/About';
+import Why_choose_us from '@/src/components/Why-choose-us/Why_choose_us';
 
 export default function MainPage() {
   return (
@@ -12,7 +13,7 @@ export default function MainPage() {
         <Hero />
       </Container>
       <About />
-      <div>TEXT</div>
+      <Why_choose_us />
     </>
   );
 }

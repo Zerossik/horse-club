@@ -9,7 +9,7 @@ import Image from 'next/image';
 const About: React.FC = () => {
   return (
     <WrapContainer>
-      <section className={style.about}>
+      <section className={style.about} id="about">
         <h2 className={style.about_title}>О нашем клубе</h2>
         <div className={style.stats_wrap}>
           <Image
