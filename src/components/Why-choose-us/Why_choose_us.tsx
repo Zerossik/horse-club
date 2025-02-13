@@ -16,7 +16,7 @@ const Why_choose_us: React.FC = () => {
         <h2 className={s.title}>Почему нас выбирают</h2>
         <List className={s.list}>
           <ListItemLi>
-            <Image src={map} alt="карта" className={s.image} />
+            <Image src={map} alt="карта" className={s.image} loading="lazy" />
 
             <p className={s.sub_title}>Удобное расположение</p>
             <p className={s.desc}>
@@ -24,7 +24,7 @@ const Why_choose_us: React.FC = () => {
             </p>
           </ListItemLi>
           <ListItemLi>
-            <Image src={table} alt="стол" className={s.image} />
+            <Image src={table} alt="стол" className={s.image} loading="lazy" />
 
             <p className={s.sub_title}>Обеденная зона</p>
             <p className={s.desc}>
@@ -33,7 +33,7 @@ const Why_choose_us: React.FC = () => {
             </p>
           </ListItemLi>
           <ListItemLi>
-            <Image src={clock} alt="часы" className={s.image} />
+            <Image src={clock} alt="часы" className={s.image} loading="lazy" />
 
             <p className={s.sub_title}>Профессиональные тренера</p>
             <p className={s.desc}>
@@ -42,7 +42,7 @@ const Why_choose_us: React.FC = () => {
             </p>
           </ListItemLi>
           <ListItemLi>
-            <Image src={auto} alt="автомобиль" className={s.image} />
+            <Image src={auto} alt="автомобиль" className={s.image} loading="lazy" />
 
             <p className={s.sub_title}>Бесплатная парковка</p>
             <p className={s.desc}>

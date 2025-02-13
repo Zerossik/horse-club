@@ -1,0 +1,130 @@
+@use '../../mіxin/mіxins' as m;
+.wrap_bg {
+  position: relative;
+  overflow: hidden;
+
+  background-image: url('/images/directions/directions_mobile_bg.webp');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include m.retina {
+    background-image: url('/images/directions/directions_mobile_bg@x2.webp');
+  }
+}
+.wrap_bg::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  display: block;
+  width: 66px;
+  height: 149px;
+  background-image: url('/images/directions/girl.webp');
+  background-repeat: no-repeat;
+}
+.wrap_bg::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  display: block;
+  width: 66px;
+  height: 149px;
+  background-image: url('/images/directions/boy.webp');
+  background-repeat: no-repeat;
+}
+
+.directions {
+  padding: 40px 0 80px 0;
+}
+.directions::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-image: url('/images/directions/cloud.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+.title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.directions_list {
+  margin: 0 auto 60px auto;
+  display: grid;
+  justify-content: center;
+  gap: 60px;
+
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 360px);
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, calc((100% - 120px) / 3));
+    grid-template-rows: repeat(2, minmax(320px, 1fr));
+  }
+}
+.directions_item {
+  width: 100%;
+  max-width: 360px;
+  padding: 0 5px 30px 5px;
+
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+
+  @media screen and (min-width: 1024px) {
+    &:nth-child(2) {
+      margin-bottom: -10%;
+    }
+    &:nth-child(5) {
+      margin-top: 10%;
+    }
+  }
+}
+.image {
+  width: 250px;
+  transform: translateY(-15%);
+  @media screen and (min-width: 1280px) {
+    width: 300px;
+  }
+}
+
+.sub_title::after {
+  content: '';
+  display: block;
+  margin: 10px auto;
+  width: 26px;
+  height: 1px;
+  background-color: var(--main-green-color);
+}
+.description {
+  font-size: 14px;
+  color: var(--text-color);
+}
+.heroButton {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(#fff383, #ffc700);
+  box-shadow: 0 4px 0 #6a5300;
+
+  font-size: 16px;
+  font-weight: 700;
+  transition: transform 200ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
